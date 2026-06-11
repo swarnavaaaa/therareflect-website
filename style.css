@@ -630,6 +630,10 @@ nav.scrolled {
 .stagger > *:nth-child(4) { transition-delay: 0.4s; }
 .stagger > *:nth-child(5) { transition-delay: 0.5s; }
 .stagger > *:nth-child(6) { transition-delay: 0.6s; }
+.stagger > *:nth-child(7) { transition-delay: 0.7s; }
+.stagger > *:nth-child(8) { transition-delay: 0.8s; }
+.stagger > *:nth-child(9) { transition-delay: 0.9s; }
+.stagger > *:nth-child(10) { transition-delay: 1.0s; }
 
 .stagger.visible > * {
     opacity: 1;
