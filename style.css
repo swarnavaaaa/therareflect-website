@@ -140,15 +140,44 @@ section {
 .cols-2 { grid-template-columns: 1fr; }
 .cols-3 { grid-template-columns: 1fr; }
 
+.differentiators-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+}
+
 @media (min-width: 768px) {
     .cols-2 { grid-template-columns: repeat(2, 1fr); }
     h1 { font-size: 4.5rem; }
     h2 { font-size: 3rem; }
+    
+    .differentiators-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .differentiators-grid .card {
+        grid-column: span 2;
+    }
+    .differentiators-grid .card:nth-child(5) {
+        grid-column: 2 / span 2;
+    }
 }
 
 @media (min-width: 992px) {
     .cols-3 { grid-template-columns: repeat(3, 1fr); }
     h1 { font-size: 5.5rem; }
+    
+    .differentiators-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .differentiators-grid .card {
+        grid-column: span 2;
+    }
+    .differentiators-grid .card:nth-child(4) {
+        grid-column: 2 / span 2;
+    }
+    .differentiators-grid .card:nth-child(5) {
+        grid-column: 4 / span 2;
+    }
 }
 
 /* Background Orbs */
